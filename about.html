@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Adegold Private School and Chriscrown College - Our mission, vision, values, and commitment to excellence in education.">
+    <meta name="keywords" content="about Adegold, about Chriscrown, school mission, school vision, I-CARE values, quality education">
+    <meta name="author" content="Adegold Private School & Chriscrown College">
+    <title>About Us - Adegold Private School & Chriscrown College</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
+            padding: 5rem 0 3rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .about-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .about-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .about-section {
+            padding: 4rem 0;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .school-about {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-lg);
+            border-left: 5px solid var(--primary-gold);
+        }
+
+        .school-about-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--light-bg);
+        }
+
+        .school-about-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--primary-gold);
+            box-shadow: var(--shadow-md);
+        }
+
+        .school-about-title h2 {
+            color: var(--primary-navy);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .school-about-title p {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .about-card {
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .about-card h3 {
+            color: var(--primary-navy);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .about-card h3::before {
+            content: '✦';
+            color: var(--primary-gold);
+        }
+
+        .about-card p,
+        .about-card ul {
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        .about-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .about-card ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .about-card ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary-gold);
+            font-weight: bold;
+        }
+
+        .national-section {
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            margin-top: 3rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .national-section h2 {
+            color: var(--primary-navy);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .national-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+
+        .national-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+            border-top: 4px solid var(--primary-gold);
+        }
+
+        .national-card h3 {
+            color: var(--primary-navy);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .national-card p {
+            line-height: 1.8;
+            color: var(--text-dark);
+            white-space: pre-line;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .school-about {
+                padding: 1.5rem;
+            }
+
+            .school-about-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .national-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/primary school pictures/adegold private school.jpeg" alt="Adegold Private School Logo" class="nav-logo left-logo">
+                <img src="images/secondary school pictures/chriscrown logo.jpeg" alt="Chriscrown College Logo" class="nav-logo right-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Our Schools</h1>
+            <p>Committed to nurturing excellence, character, and academic achievement from early childhood through secondary education</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <!-- Adegold Private School -->
+                <div class="school-about">
+                    <div class="school-about-header">
+                        <img src="images/primary school pictures/adegold private school.jpeg" alt="Adegold Logo" class="school-about-logo">
+                        <div class="school-about-title">
+                            <h2>Adegold Private School</h2>
+                            <p>"Knowledge & Godly Character"</p>
+                        </div>
+                    </div>
+
+                    <div class="about-card" style="grid-column: 1 / -1;">
+                        <h3>Our History</h3>
+                        <p>Adegold started in the sitting room as a Day Care service on a quarter plot of land with the population of 2 babies.</p>
+                        <p>Mrs Esther Olomu had to go from house to house and street to street to advertise the school, telling people how well she can teach, back babies and bathe them before going back home. She didn't mind people's reactions as long as she sees a baby with you, she'll tell you about her ability to care for the child.</p>
+                        <p>At a point she made black and white photocopy handbills and set out to start sharing with one of her Nephews just to publicize the school.</p>
+                        <p>On <strong>September 22nd 2016</strong>, she was outside her building washing when a woman called Iya Oyinbo brought in four children to join the existing children in the facility.</p>
+                        <p>That's how Adegold became a day school which charges ₦50 (Fifty Naira) per day from 7:00 am - 2:00 pm Monday to Friday.</p>
+                        <p>Most times some children would come with money and some without money but that never discouraged her because of her love for children and passion for the job. The school was having just 2 teachers: The Pioneer Mrs Olomu Esther and her Niece Miss Blessing Osazuwa, with the help and advice of her husband Mr Ayodele Olomu. The school's first examination was written with a pen and paper.</p>
+                        <p>After a year, Adegold moved to her permanent site where it's seated today with the help of God.</p>
+                        <p><strong>The name ADEGOLD was gotten from the names of my children:</strong><br>
+                        ADEOLA<br>
+                        WURAOLA<br>
+                        ADEDIWURA</p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <h3>Our Mission</h3>
+                            <p>To establish a solid foundation of knowledge and godly character in every child, preparing them to be responsible and productive members of society. We are committed to opening the life gate for all students to come in and experience quality education.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <h3>Our Vision</h3>
+                            <p>To be the best educational institution that produces responsible products through knowledge, progress, and truth. We aim to be of help to the nation and to open opportunities for every child to reach their full potential.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-grid">
+
+                        <div class="about-card">
+                            <h3>Educational Levels</h3>
+                            <ul>
+                                <li><strong>Creche:</strong> Early childhood care and development</li>
+                                <li><strong>Explorer:</strong> Foundation learning experiences</li>
+                                <li><strong>Nursery:</strong> Pre-primary education</li>
+                                <li><strong>Primary:</strong> Comprehensive primary education (1-6)</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-card">
+                            <h3>Our Values</h3>
+                            <ul>
+                                <li>Knowledge and Academic Excellence</li>
+                                <li>Godly Character Development</li>
+                                <li>Progress and Innovation</li>
+                                <li>Truth and Integrity</li>
+                                <li>Service to Nation and Society</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chriscrown College -->
+                <div class="school-about">
+                    <div class="school-about-header">
+                        <img src="images/secondary school pictures/chriscrown logo.jpeg" alt="Chriscrown Logo" class="school-about-logo">
+                        <div class="school-about-title">
+                            <h2>Chriscrown College</h2>
+                            <p>"Excellence Through Integrity"</p>
+                        </div>
+                    </div>
+
+                    <div class="about-card" style="grid-column: 1 / -1;">
+                        <h3>Our History</h3>
+                        <p>Chriscrown College was established in year <strong>2020</strong> as the secondary arm of ADEGOLD PRIVATE SCHOOL.</p>
+                        <p>We saw the need to establish the secondary school when our pupils began to graduate from primary section.</p>
+                        <p>We started with year 7 and year 8 (JS 1 and JS 2) classes in September, 2020. The population skyrocketed in a short while when people began to see the quality of our academic works on the students.</p>
+                        <p>Chriscrown College has since graduated three sets of SSCE students with <strong>98% excellence in WAEC and NECO examinations</strong>.</p>
+                        <p>We are still so much committed to our tradition of excellence with the help of God.</p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <h3>Our Mission</h3>
+                            <p>Founded in 2020 to nurture a tradition of excellence with hardwork and resilience. We are committed to training students with love, respect, and dedication, preparing them to be proud ambassadors of academic and moral excellence.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <h3>Our Vision</h3>
+                            <p>To be a lovely school where students are proud to belong, where teachers train with love, and where excellence is achieved through the I-CARE values: Integrity, Commitment, Accountability, Respect, and Excellence.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-grid">
+
+                        <div class="about-card">
+                            <h3>Educational Levels</h3>
+                            <ul>
+                                <li><strong>Junior Secondary:</strong> JSS 1, JSS 2, JSS 3</li>
+                                <li><strong>Senior Secondary:</strong> SSS 1, SSS 2, SSS 3</li>
+                            </ul>
+                        </div>
+
+                        <div class="about-card">
+                            <h3>I-CARE Core Values</h3>
+                            <ul>
+                                <li><strong>I</strong> - Integrity: Honesty in all dealings</li>
+                                <li><strong>C</strong> - Commitment: Dedication to excellence</li>
+                                <li><strong>A</strong> - Accountability: Responsibility for actions</li>
+                                <li><strong>R</strong> - Respect: Regard for all persons</li>
+                                <li><strong>E</strong> - Excellence: Pursuit of the highest standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- National Anthem and Pledge -->
+                <div class="national-section">
+                    <h2>National Anthem & Pledge</h2>
+                    <div class="national-grid">
+                        <div class="national-card">
+                            <h3>🇳🇬 Nigerian National Anthem</h3>
+                            <p>Nigeria we hail thee,
+Our own dear native land,
+Though tribe and tongue may differ,
+In brotherhood, we stand,
+Nigerians all, and proud to serve
+Our sovereign Motherland.
+
+Our flag shall be a symbol
+That truth and justice reign,
+In peace or battle honour'd,
+And this we count as gain,
+To hand on to our children
+A banner without stain.
+
+O God of all creation,
+Grant this our one request,
+Help us to build a nation
+Where no man is oppressed,
+And so with peace and plenty
+Nigeria may be blessed.</p>
+                        </div>
+
+                        <div class="national-card">
+                            <h3>🇳🇬 Nigerian National Pledge</h3>
+                            <p>I pledge to Nigeria my country
+To be faithful, loyal and honest
+To serve Nigeria with all my strength
+To defend her unity
+And uphold her honour and glory
+So help me God.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><strong>Address:</strong><br>Lateef Oluwalolope Close, Pipeline,<br>Gomajayi Oko-Afo, Badagry-Lagos</p>
+                    <p><strong>Phone:</strong><br>+234-810-354-0139<br>+234-703-883-4208</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Schools</h4>
+                    <p><strong>Adegold Private School</strong><br>Creche to Primary Education</p>
+                    <p><strong>Chriscrown College</strong><br>Junior & Senior Secondary</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CM3VjaopU/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.5rem;">📘</span> Facebook
+                        </a>
+                        <a href="https://wa.link/33ckmg" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.5rem;">💬</span> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Adegold Private School & Chriscrown College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Adegold Private School and Chriscrown College. Get in touch for admissions, inquiries, and school visits. Located in Badagry, Lagos.">
+    <meta name="keywords" content="contact Adegold, contact Chriscrown, school admission, Badagry schools contact, Lagos schools">
+    <meta name="author" content="Adegold Private School & Chriscrown College">
+    <title>Contact Us - Adegold Private School & Chriscrown College</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
+            padding: 5rem 0 3rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .contact-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .contact-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .contact-section {
+            padding: 5rem 0;
+            background: linear-gradient(to bottom, var(--light-bg) 0%, var(--white) 100%);
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            border-left: 5px solid var(--primary-gold);
+        }
+
+        .contact-info h2 {
+            color: var(--primary-navy);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+            border-radius: 15px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .info-item h3 {
+            color: var(--primary-navy);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            color: var(--primary-gold);
+        }
+
+        .info-item p {
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .info-item a {
+            color: var(--secondary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-item a:hover {
+            color: var(--primary-gold);
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            border-right: 5px solid var(--primary-gold);
+        }
+
+        .contact-form h2 {
+            color: var(--primary-navy);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--primary-navy);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--light-bg);
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: var(--light-bg);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--accent-gold) 100%);
+            color: var(--primary-navy);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .schools-contact {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .school-contact-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            border-top: 5px solid var(--primary-gold);
+            transition: all 0.3s ease;
+        }
+
+        .school-contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .school-contact-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--primary-gold);
+            margin: 0 auto 1.5rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .school-contact-card h3 {
+            color: var(--primary-navy);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .school-contact-card p {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .admission-info {
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .admission-info h4 {
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .admission-info ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .admission-info ul li {
+            padding: 0.3rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-dark);
+        }
+
+        .admission-info ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary-gold);
+            font-weight: bold;
+        }
+
+        .map-section {
+            margin-top: 4rem;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .map-section h2 {
+            color: var(--primary-navy);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 968px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/primary school pictures/adegold private school.jpeg" alt="Adegold Private School Logo" class="nav-logo left-logo">
+                <img src="images/secondary school pictures/chriscrown logo.jpeg" alt="Chriscrown College Logo" class="nav-logo right-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We're here to answer your questions and help you find the perfect educational path for your child</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <!-- Contact Information Grid -->
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-item">
+                        <h3><span class="info-icon">📍</span> Our Location</h3>
+                        <p>Lateef Oluwalolope Close, Pipeline,<br>
+                        Gomajayi Oko-Afo,<br>
+                        Badagry-Lagos, Nigeria</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3><span class="info-icon">📞</span> Phone Numbers</h3>
+                        <p>
+                            <a href="tel:+2348103540139">+234-810-354-0139</a><br>
+                            <a href="tel:+2347038834208">+234-703-883-4208</a>
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3><span class="info-icon">⏰</span> Office Hours</h3>
+                        <p>
+                            Monday - Friday: 8:00 AM - 4:00 PM<br>
+                            Saturday: 9:00 AM - 1:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3><span class="info-icon">🎓</span> Admissions</h3>
+                        <p>
+                            Admissions are open year-round for all levels.<br>
+                            Visit us for a tour and enrollment information.
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3><span class="info-icon">💬</span> Connect With Us</h3>
+                        <p>
+                            <a href="https://www.facebook.com/share/1CM3VjaopU/" target="_blank" rel="noopener noreferrer">Facebook</a><br>
+                            <a href="https://wa.link/33ckmg" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Schools Contact Cards -->
+            <div class="schools-contact">
+                <div class="school-contact-card">
+                    <img src="images/primary school pictures/adegold private school.jpeg" alt="Adegold Logo" class="school-contact-logo">
+                    <h3>Adegold Private School</h3>
+                    <p>"Knowledge & Godly Character"</p>
+                    <div class="admission-info">
+                        <h4>Admission Open For:</h4>
+                        <ul>
+                            <li>Creche</li>
+                            <li>Explorer</li>
+                            <li>Nursery</li>
+                            <li>Primary (1-6)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="school-contact-card">
+                    <img src="images/secondary school pictures/chriscrown logo.jpeg" alt="Chriscrown Logo" class="school-contact-logo">
+                    <h3>Chriscrown College</h3>
+                    <p>"Excellence Through Integrity"</p>
+                    <div class="admission-info">
+                        <h4>Admission Open For:</h4>
+                        <ul>
+                            <li>Junior Secondary (JSS 1-3)</li>
+                            <li>Senior Secondary (SSS 1-3)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><strong>Address:</strong><br>Lateef Oluwalolope Close, Pipeline,<br>Gomajayi Oko-Afo, Badagry-Lagos</p>
+                    <p><strong>Phone:</strong><br>+234-810-354-0139<br>+234-703-883-4208</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Schools</h4>
+                    <p><strong>Adegold Private School</strong><br>Creche to Primary Education</p>
+                    <p><strong>Chriscrown College</strong><br>Junior & Senior Secondary</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CM3VjaopU/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.5rem;">📘</span> Facebook
+                        </a>
+                        <a href="https://wa.link/33ckmg" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.5rem;">💬</span> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Adegold Private School & Chriscrown College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

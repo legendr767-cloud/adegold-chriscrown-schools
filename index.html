@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adegold Private School and Chriscrown College - Quality education from Creche to Secondary School in Badagry, Lagos. Nurturing knowledge, godly character, and excellence.">
+    <meta name="keywords" content="Adegold Private School, Chriscrown College, Badagry schools, Lagos schools, primary school, secondary school, quality education Nigeria">
+    <meta name="author" content="Adegold Private School & Chriscrown College">
+    <meta property="og:title" content="Adegold Private School & Chriscrown College">
+    <meta property="og:description" content="Excellence in Education - From Creche to Secondary School">
+    <meta property="og:type" content="website">
+    <title>Adegold Private School & Chriscrown College - Excellence in Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/primary school pictures/adegold private school.jpeg" alt="Adegold Private School Logo" class="nav-logo left-logo">
+                <img src="images/secondary school pictures/chriscrown logo.jpeg" alt="Chriscrown College Logo" class="nav-logo right-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Ad Backgrounds -->
+    <section class="hero hero-slideshow">
+        <div class="hero-slide active" style="background-image: url('ads/adegold-advert.jpeg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Adegold Private School</h1>
+                <p class="hero-subtitle">Knowledge & Godly Character - Creche to Primary Education</p>
+                <div class="hero-buttons">
+                    <a href="#primary" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-secondary">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('ads/chris-crown-college-advert.jpeg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Chriscrown College</h1>
+                <p class="hero-subtitle">Excellence Through Integrity - Junior & Senior Secondary</p>
+                <div class="hero-buttons">
+                    <a href="#secondary" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-secondary">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Navigation Dots -->
+        <div class="hero-dots">
+            <span class="hero-dot active" onclick="setHeroSlide(0)"></span>
+            <span class="hero-dot" onclick="setHeroSlide(1)"></span>
+        </div>
+    </section>
+
+    <!-- Schools Carousel Section -->
+    <section class="schools-section">
+        <div class="container">
+            <h2 class="section-title">Our Schools</h2>
+            <div class="carousel-container">
+                <!-- Primary School Slide -->
+                <div class="carousel-slide active" id="primary">
+                    <div class="school-card">
+                        <div class="school-header">
+                            <img src="images/primary school pictures/adegold private school.jpeg" alt="Adegold Logo" class="school-logo">
+                            <div class="school-info">
+                                <h3 class="school-name">Adegold Private School</h3>
+                                <p class="school-motto">"Knowledge & Godly Character"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="school-gallery">
+                            <div class="gallery-main">
+                                <img src="images/primary school pictures/primary 1.jpeg" alt="Primary School" class="gallery-image active-gallery" data-index="0">
+                                <img src="images/primary school pictures/primary 2.jpeg" alt="Primary School" class="gallery-image" data-index="1">
+                                <img src="images/primary school pictures/primary 3.jpeg" alt="Primary School" class="gallery-image" data-index="2">
+                                <img src="images/primary school pictures/primary 4.jpeg" alt="Primary School" class="gallery-image" data-index="3">
+                                <img src="images/primary school pictures/primary 5.jpeg" alt="Primary School" class="gallery-image" data-index="4">
+                            </div>
+                            <div class="gallery-nav">
+                                <button class="gallery-btn prev" onclick="changeGalleryImage('primary', -1)">‹</button>
+                                <button class="gallery-btn next" onclick="changeGalleryImage('primary', 1)">›</button>
+                            </div>
+                        </div>
+
+                        <div class="school-details">
+                            <div class="detail-card">
+                                <h4>Programs Offered</h4>
+                                <ul>
+                                    <li>Creche</li>
+                                    <li>Explorer</li>
+                                    <li>Nursery</li>
+                                    <li>Primary</li>
+                                </ul>
+                            </div>
+                            <div class="detail-card">
+                                <h4>School Anthem</h4>
+                                <p class="anthem-text">
+                                    To God be the glory<br>
+                                    Great things, He hath done<br>
+                                    Established Adegold on solid rock<br>
+                                    To be of help to the nation and life<br>
+                                    And open the life gate that all may come in<br>
+                                    Our school is the best, let the students come in<br>
+                                    Our school is the best, let pupils rejoice<br>
+                                    Oh come for knowledge, progress and for truth<br>
+                                    Which makes us produce responsible products
+                                </p>
+                            </div>
+                            <div class="detail-card">
+                                <h4>School Pledge</h4>
+                                <p class="pledge-text">
+                                    I pledge to Adegold Private School<br>
+                                    To be useful to myself, to the society<br>
+                                    And the nation at large.<br>
+                                    So help me God. Amen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary School Slide -->
+                <div class="carousel-slide" id="secondary">
+                    <div class="school-card">
+                        <div class="school-header">
+                            <img src="images/secondary school pictures/chriscrown logo.jpeg" alt="Chriscrown Logo" class="school-logo">
+                            <div class="school-info">
+                                <h3 class="school-name">Chriscrown College</h3>
+                                <p class="school-motto">"Excellence Through Integrity"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="school-gallery">
+                            <div class="gallery-main">
+                                <img src="images/secondary school pictures/secondary 1.jpeg" alt="Secondary School" class="gallery-image active-gallery" data-index="0">
+                                <img src="images/secondary school pictures/secondary 2.jpeg" alt="Secondary School" class="gallery-image" data-index="1">
+                                <img src="images/secondary school pictures/secondary 3.jpeg" alt="Secondary School" class="gallery-image" data-index="2">
+                            </div>
+                            <div class="gallery-nav">
+                                <button class="gallery-btn prev" onclick="changeGalleryImage('secondary', -1)">‹</button>
+                                <button class="gallery-btn next" onclick="changeGalleryImage('secondary', 1)">›</button>
+                            </div>
+                        </div>
+
+                        <div class="school-details">
+                            <div class="detail-card">
+                                <h4>Programs Offered</h4>
+                                <ul>
+                                    <li>Junior Secondary School (JSS 1-3)</li>
+                                    <li>Senior Secondary School (SSS 1-3)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-card">
+                                <h4>School Anthem</h4>
+                                <p class="anthem-text">
+                                    Chriscrown College our Alma Mater<br>
+                                    Founded 2019<br>
+                                    To nurture a tradition of excellence<br>
+                                    With hardwork and resilience<br>
+                                    Oh what a lovely school we joined<br>
+                                    We are all proud students<br>
+                                    Our teachers trained us with love<br>
+                                    Our parents are dear to us
+                                </p>
+                            </div>
+                            <div class="detail-card">
+                                <h4>School Pledge</h4>
+                                <p class="pledge-text">
+                                    I pledge this day to Chriscrown College<br>
+                                    To do my best to obey rulers in class and school<br>
+                                    To respect our teachers, myself and others<br>
+                                    To give in my best as much as I can<br>
+                                    And on God I rely to make these happen
+                                </p>
+                            </div>
+                            <div class="detail-card">
+                                <h4>Core Values (I-CARE)</h4>
+                                <ul class="core-values">
+                                    <li><strong>I</strong> - Integrity</li>
+                                    <li><strong>C</strong> - Commitment</li>
+                                    <li><strong>A</strong> - Accountability</li>
+                                    <li><strong>R</strong> - Respect</li>
+                                    <li><strong>E</strong> - Excellence</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="changeSlide(0)">
+                        <span class="btn-text">Adegold Primary</span>
+                    </button>
+                    <button class="carousel-btn" onclick="changeSlide(1)">
+                        <span class="btn-text">Chriscrown College</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Quality Education</h3>
+                    <p>Comprehensive curriculum designed to nurture academic excellence and character development</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Experienced Teachers</h3>
+                    <p>Dedicated and qualified educators committed to student success and personal growth</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏫</div>
+                    <h3>Modern Facilities</h3>
+                    <p>State-of-the-art learning environment equipped with modern educational resources</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Holistic Development</h3>
+                    <p>Focus on academic, spiritual, moral, and social development of every student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><strong>Address:</strong><br>Lateef Oluwalolope Close, Pipeline,<br>Gomajayi Oko-Afo, Badagry-Lagos</p>
+                    <p><strong>Phone:</strong><br>+234-810-354-0139<br>+234-703-883-4208</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Schools</h4>
+                    <p><strong>Adegold Private School</strong><br>Creche to Primary Education</p>
+                    <p><strong>Chriscrown College</strong><br>Junior & Senior Secondary</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CM3VjaopU/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.5rem;">📘</span> Facebook
+                        </a>
+                        <a href="https://wa.link/33ckmg" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.5rem;">💬</span> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Adegold Private School & Chriscrown College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

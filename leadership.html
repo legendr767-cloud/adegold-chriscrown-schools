@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the leadership team of Adegold Private School and Chriscrown College - Dedicated professionals committed to excellence in education.">
+    <meta name="keywords" content="Adegold leadership, Chriscrown staff, school management, proprietress, principal, director">
+    <meta name="author" content="Adegold Private School & Chriscrown College">
+    <title>Leadership Team - Adegold Private School & Chriscrown College</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .leadership-hero {
+            background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
+            padding: 5rem 0 3rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .leadership-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .leadership-hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .leadership-section {
+            padding: 5rem 0;
+            background: linear-gradient(to bottom, var(--light-bg) 0%, var(--white) 100%);
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .leader-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            border-top: 5px solid var(--primary-gold);
+        }
+
+        .leader-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .leader-image-container {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            background: var(--light-bg);
+        }
+
+        .leader-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .leader-card:hover .leader-image {
+            transform: scale(1.05);
+        }
+
+        .leader-info {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .leader-name {
+            color: var(--primary-navy);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .leader-title {
+            color: var(--primary-gold);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .leader-description {
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .intro-section {
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        .intro-section h2 {
+            color: var(--primary-navy);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro-section p {
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .leadership-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .leadership-grid {
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
+            }
+
+            .leader-image-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="images/primary school pictures/adegold private school.jpeg" alt="Adegold Private School Logo" class="nav-logo left-logo">
+                <img src="images/secondary school pictures/chriscrown logo.jpeg" alt="Chriscrown College Logo" class="nav-logo right-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="leadership.html" class="nav-link active">Leadership</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Leadership Hero -->
+    <section class="leadership-hero">
+        <div class="container">
+            <h1>Our Leadership Team</h1>
+            <p>Meet the dedicated professionals who guide our institutions with vision, passion, and commitment to excellence</p>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership-section">
+        <div class="container">
+            <div class="intro-section">
+                <h2>Committed to Excellence</h2>
+                <p>Our leadership team brings together years of experience in education, administration, and child development. Together, they work tirelessly to ensure that every student receives the best possible education in a nurturing and supportive environment.</p>
+            </div>
+
+            <div class="leadership-grid">
+                <!-- Proprietress -->
+                <div class="leader-card">
+                    <div class="leader-image-container">
+                        <img src="pictures/Mrs OLOMU MUTIAT ESTHER .jpeg" alt="Mrs Olomu Mutiat Esther" class="leader-image">
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Mrs. Olomu Mutiat Esther</h3>
+                        <p class="leader-title">Proprietress</p>
+                        <p class="leader-description">The visionary founder of Adegold Private School, Mrs. Olomu Mutiat Esther started the school in her sitting room with just 2 babies. Her unwavering dedication, love for children, and passion for education have transformed Adegold into a thriving institution that serves the community with excellence.</p>
+                    </div>
+                </div>
+
+                <!-- Director -->
+                <div class="leader-card">
+                    <div class="leader-image-container">
+                        <img src="pictures/OLOMU AYODELE SIMEON.jpeg" alt="Olomu Ayodele Simeon" class="leader-image">
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Olomu Ayodele Simeon</h3>
+                        <p class="leader-title">Director</p>
+                        <p class="leader-description">As Director, Mr. Olomu Ayodele Simeon provides strategic guidance and support to both Adegold Private School and Chriscrown College. His leadership ensures the institutions maintain their commitment to quality education and continuous improvement.</p>
+                    </div>
+                </div>
+
+                <!-- Principal/School Manager -->
+                <div class="leader-card">
+                    <div class="leader-image-container">
+                        <img src="pictures/Mr OLANIPEKUN VINCENT OJO.jpeg" alt="Mr Olanipekun Vincent Ojo" class="leader-image">
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Mr. Olanipekun Vincent Ojo</h3>
+                        <p class="leader-title">Principal / School Manager</p>
+                        <p class="leader-description">Mr. Olanipekun Vincent Ojo serves as the Principal and School Manager, overseeing the day-to-day operations and academic programs. His expertise in educational management ensures that students receive top-quality instruction and pastoral care.</p>
+                    </div>
+                </div>
+
+                <!-- Admin Officer -->
+                <div class="leader-card">
+                    <div class="leader-image-container">
+                        <img src="pictures/MRS SADIAT OLUWASEUN ABODUNRIN. .jpeg" alt="Mrs Sadiat Oluwaseun Abodunrin" class="leader-image">
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Mrs. Sadiat Oluwaseun Abodunrin</h3>
+                        <p class="leader-title">Admin Officer</p>
+                        <p class="leader-description">Mrs. Sadiat Oluwaseun Abodunrin manages the administrative functions of the schools, ensuring smooth operations, efficient record-keeping, and excellent service to students, parents, and staff members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p><strong>Address:</strong><br>Lateef Oluwalolope Close, Pipeline,<br>Gomajayi Oko-Afo, Badagry-Lagos</p>
+                    <p><strong>Phone:</strong><br>+234-810-354-0139<br>+234-703-883-4208</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Our Schools</h4>
+                    <p><strong>Adegold Private School</strong><br>Creche to Primary Education</p>
+                    <p><strong>Chriscrown College</strong><br>Junior & Senior Secondary</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CM3VjaopU/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.5rem;">📘</span> Facebook
+                        </a>
+                        <a href="https://wa.link/33ckmg" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.5rem;">💬</span> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Adegold Private School & Chriscrown College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

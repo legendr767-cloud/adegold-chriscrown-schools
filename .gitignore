@@ -1,0 +1,26 @@
+# Documentation files (keep only essential ones)
+UPDATES_SUMMARY.md
+QUICK_REFERENCE.md
+FINAL_VERIFICATION_REPORT.md
+DEPLOYMENT.md
+FINAL_REPORT.md
+PROJECT_SUMMARY.md
+QUICK_START.md
+SUCCESS.txt
+TESTING_CHECKLIST.md
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+npm-debug.log*
